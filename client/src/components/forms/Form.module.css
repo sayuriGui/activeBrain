@@ -1,0 +1,68 @@
+.form-control {
+  @apply mb-2;
+}
+
+.form-control label,
+.form-control input {
+  @apply block;
+}
+
+.form-control label {
+  @apply font-bold mb-2;
+}
+
+.form-control input,
+.form-control select {
+  font: inherit;
+  border: 1px solid #ccc;
+
+  @apply p-2 rounded w-80 max-w-full;
+}
+
+.control-group {
+  @apply flex gap-x-4 flex-wrap;
+}
+
+.control-group .form-control {
+  min-width: 15rem;
+  flex: 1;
+}
+
+.button {
+  @apply bg-green-700 uppercase text-white font-bold shadow text-xs px-4 py-2 rounded outline-none sm:mr-2 mb-1;
+  border: 1px solid #240370;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  @apply bg-green-400 shadow-md  outline-none;
+}
+
+.button:disabled,
+.button:disabled:active,
+.button:disabled:hover {
+  @apply bg-gray-400;
+  color: black;
+  border-color: black;
+}
+
+.form-actions {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.error-text {
+  color: #b40e0e;
+}
